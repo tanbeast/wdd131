@@ -1,0 +1,9 @@
+nav {
+    display: flex;
+}
+
+body {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+}

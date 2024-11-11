@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
+
+/*
+colors- #303841 - #F5793B - #46515e - #1a1f24 - #f79a6b
+*/
+.navigation {
+    display: flex;
+    text-align: center;
+	text-decoration: none;
+    color: #F5793B;
+}
+
+.content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}

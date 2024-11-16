@@ -1,17 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
 
-/*
-colors- #303841 - #F5793B - #46515e - #1a1f24 - #f79a6b
+/*      
+colors- #75DDDD - #1A1F24 - #FFC0A1 - #1113821 - whitesmoke
 */
-.navigation {
-    display: flex;
+h1,h2{
+    width: 100%;
     text-align: center;
-	text-decoration: none;
-    color: #F5793B;
+    font-family: "Dancing Script";   
 }
-
+header, footer{
+    background-color: #111382;
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    border: solid black 1px;
+}
+.navigation {
+    padding-left: 5%;
+    width: 90%;  
+    display: flex;
+    justify-content: space-between;
+	list-style: none;
+    color: whitesmoke;
+}
+.navigation a{
+    padding-left: 5%;
+    padding-right: 5%;
+    color:whitesmoke;
+    text-decoration: none;
+}
+.navigation a:hover{
+    background-color: black;
+    color:whitesmoke;
+}
 .content {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+.card{
+    margin: 5%;
+    background-color: whitesmoke; 
+      
+}
+.me{
+    display: flex;
+}
+img{
+    max-height: 200px;
 }

@@ -12,6 +12,7 @@ colors - #75DDDD - #1A1F24 - #FFC0A1 - #0f1157 - whitesmoke
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 } 
 footer, header {
     background-color: var(--primary-background);
@@ -26,7 +27,6 @@ header {
 }
 footer {
     padding: 1rem;
-    text-align: center;
     font-size: 1.1rem;
 }
 h1, h2, h3 {
@@ -38,7 +38,6 @@ nav {
     grid-gap: 10px;
     font-size: 1.2rem;
     grid-column: 1/2;
-    text-align: center;
     width: 90%;
 }
 nav a {
@@ -71,7 +70,6 @@ header a {
 }
 main img {
     width: 270px;
-    height: 300px;
     border-radius: 4px;
 }
 figure, p {

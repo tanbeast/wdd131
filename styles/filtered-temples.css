@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
+/*        teal      black     peach     blue
+colors - #75DDDD - #1A1F24 - #FFC0A1 - #0f1157 - whitesmoke
+*/
+* {
+    --primary-color: whitesmoke;
+    --secondary-color: #FFC0A1;
+
+    --primary-background:#0f1157;
+}
+.content {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+} 
+footer, header {
+    background-color: var(--primary-background);
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+footer {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+h1, h2, h3 {
+    margin: 4px 1rem;
+    font-family: "Dancing Script";
+}
+nav {
+    display: none;
+    grid-gap: 10px;
+    font-size: 1.2rem;
+    grid-column: 1/2;
+    width: 90%;
+}
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    border-bottom: 1px solid #bbb;
+
+}
+nav a:hover {
+    color: #75DDDD;
+    font-weight: 1000;
+}
+nav.show {
+    display: grid;
+}
+header a {
+    text-decoration: none;
+}
+#menu::before {
+    content: "≡";
+    color: white;
+    font-size: 2rem;
+}
+#menu.show::before {
+	content: "X";
+    color: white;
+    font-size: 1.5rem;
+}
+main img {
+    width: 270px;
+    border-radius: 4px;
+}
+figure, p {
+    margin: 2px;
+}
+
+.img-grid {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); 
+    grid-gap: 10px;
+    place-items: center;
+}
+.active {
+    color: var(--secondary-color);
+}

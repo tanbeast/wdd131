@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
+
+h1,h2,.heading-font{
+    width: 100%;
+    font-family: "Dancing Script";   
+}
+img{
+    
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}

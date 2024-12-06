@@ -3,40 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="author" content="Kade O'Crowley">
-    <meta name="description" content="">
+    <title>WDD 131 - Texas</title>
+    <meta name="description" content="A webpage for details and weather of texas for W03 assignment">
+    <meta name="author" content="Kade Ocrowley">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/place.css">
-    <script defer src="scripts/place.js"></script>
+    <script src="scripts/place.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
-        <h1>Texas USA</h1>
+        <h1>Texas</h1>
     </header>
     <main>
-        <picture>
-            <source srcset="images" media="(max-width: 400px)">
-            <source srcset="images" media="(max-width: 960px)">
-            <img src="images" alt="oil drill in texas">
-        </picture>
-        <section>
-            <h2>Data</h2>
-            <p>Area: </p>
-            <p>Population: </p>
-            <p>capital: </p>
-            <p>Languages: </p>
-            <p>Currency: </p>
-            <p>Time Zone: </p>
-
-        </section>
-        <section>
-            <h2>Weather</h2>
-            <p id="currentTemp">Loading...</p>
-            <p id="windSpeed">Loading...</p>
-            
-
-        </section>
+        <div class="ps-relative">
+            <picture>
+                <source media="(min-width:600px )" srcset="images/texas-large.webp">
+                <img src="images/texas.webp" height="750" width="500" alt="zanzibar">
+            </picture>
+            <div class="card data-card">
+                <div class="card-header"><h2>Data</h2></div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Area:</td>
+                                <td>268,596 sq mi</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Population:</td>
+                                <td>30,503,301</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Capital:</td>
+                                <td>Austin</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Languages:</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Currency:</td>
+                                <td>american dollar</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Time Zone:</td>
+                                <td>UTC−06:00</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Calling Code:</td>
+                                <td>+143</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Internet TLD:</td>
+                                <td>.tx</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card weather-card">
+                <div class="card-header"> 
+                    <h2>Weather</h2>
+                    <img src="images/sun-icon.svg" height="64" width="64" alt="weather">
+                    <span class="weather-icon">
+                    </span>
+                </div>
+                <div class="card-body">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="text-end">Temperature:</td>
+                                <td>56 <sup>o</sup>F</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Conditions:</td>
+                                <td>Sunny</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind:</td>
+                                <td>19 mi/h</td>
+                            </tr>
+                            <tr>
+                                <td class="text-end">Wind Chill:</td>
+                                <td id="windChill"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p id="copyright">&copy; </p>

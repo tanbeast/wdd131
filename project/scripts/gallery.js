@@ -1,17 +1,16 @@
-if (document.getElementById("gallery")) {
-    const gallery = document.getElementById("gallery");
+const galleryContainer = document.getElementById("gallery-container");
 
-    let i = 1;
-    while (true) {
-        const imagePath = `images/picture${i}.jpg`;
+const images = [
+    "https://via.placeholder.com/300?text=Yellowstone",
+    "https://via.placeholder.com/300?text=Grand+Canyon",
+    "https://via.placeholder.com/300?text=Buslife+Festival",
+    "https://via.placeholder.com/300?text=Lake+Tahoe",
+    "https://via.placeholder.com/300?text=National+Park+Tour"
+];
 
-        // Simulate image existence check
-        if (i > 5) break; // Replace with actual logic to check file existence
-
-        const img = document.createElement("img");
-        img.src = imagePath;
-        img.alt = `Picture ${i}`;
-        gallery.appendChild(img);
-        i++;
-    }
-}
+images.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Trip Photo";
+    galleryContainer.appendChild(img);
+});

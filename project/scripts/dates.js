@@ -3,3 +3,10 @@ document.getElementById("copyright").innerText += currentYear  + "- Kade O'Crowl
 
 const lastModifiedDate = new Date(document.lastModified);
 document.getElementById("lastModified").innerText += lastModifiedDate.toLocaleString();
+
+const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active'); // Toggle the 'active' class
+    });

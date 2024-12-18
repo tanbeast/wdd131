@@ -1,0 +1,130 @@
+/*        teal      black     peach     blue
+colors - #75DDDD - #1A1F24 - #FFC0A1 - #0f1157 - whitesmoke
+  General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #1A1F24;
+    color: #75DDDD;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background-color: #0f1157;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: "Dancing Script", cursive;
+    color: #FFC0A1;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.navbar h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #75DDDD;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFC0A1; /* Secondary font color */
+    font-family: "Times New Roman", serif;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    color: #75DDDD;
+}
+
+/* Hamburger Button */
+#navToggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #FFC0A1;
+    cursor: pointer;
+}
+
+
+/* Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    color: #FFC0A1;
+    margin-bottom: 1rem;
+}
+
+/* Gallery */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery-container img {
+    width: 100%;
+    border: 2px solid #FFC0A1;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #0f1157;
+    color: #75DDDD;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Responsive Navigation */
+@media screen and (max-width: 600px) {
+    #navToggle {
+        display: block; /* Show the toggle button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the nav links initially */
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #1A1F24; /* Secondary background */
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the links when active */
+    }
+}
